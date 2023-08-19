@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    border: 0;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+}
+#head{
+    
+    background-color: rgba(0, 174, 255, 0.849);
+    color: white;
+
+}
+#video{
+    height: 700px;
+    width: 1500px;
+    padding-top: 20px;
+}

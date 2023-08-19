@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    border: 0;
+    
+    text-decoration: none;
+    list-style: none;
+}
+#head{
+    text-align: center;
+    background-color: rgba(0, 174, 255, 0.849);
+    color: white;
+
+}
+#head_URL{
+    color: white;
+    text-align: center;
+    display: inline-block;
+    margin-right: 10px;
+}
+#hello{
+    padding-top: 50px;
+}
+#about{
+    padding-top: 30px;
+}
+#portfolio{
+    padding-top: 30px;
+}
+#McTeach{
+
+}
+#findMe{
+    padding-top: 30px;
+    
+}
+#foot{
+    text-align: center;
+    background-color: rgba(0, 174, 255, 0.849);;
+    color: whitesmoke;
+}
