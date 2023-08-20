@@ -8,11 +8,11 @@
 .linkTo :hover{
     color: gray;
 }
-h2{
+.fp{
     padding-top: 25px;
 
 }
-p{
+.sp{
     padding-top: 10px;
 }
 #head{
@@ -37,7 +37,7 @@ p{
     padding-left: 25px;
 }
 #portfolio{
-    padding-top: 70px;
+    padding-top: 50px;
     padding-left: 25px;
 }
 #McTeach{
@@ -45,6 +45,7 @@ p{
 }
 #links{
     padding-left: 25px;
+    margin-top: 40px;
 }
 #findMe{
     padding-top: 70px;
