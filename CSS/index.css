@@ -5,36 +5,57 @@
     text-decoration: none;
     list-style: none;
 }
+.linkTo :hover{
+    color: gray;
+}
+h2{
+    padding-top: 25px;
+
+}
+p{
+    padding-top: 10px;
+}
 #head{
     text-align: center;
-    background-color: rgba(0, 174, 255, 0.849);
     color: white;
-
+    height: 150px;
+    background-color: #76beee;
 }
 #head_URL{
     color: white;
     text-align: center;
     display: inline-block;
+    margin-top: 40px;
     margin-right: 10px;
 }
 #hello{
-    padding-top: 50px;
+    padding-top: 80px;
+    padding-left: 25px;
 }
 #about{
-    padding-top: 30px;
+    margin-top: 80px;
+    padding-left: 25px;
 }
 #portfolio{
-    padding-top: 30px;
+    padding-top: 70px;
+    padding-left: 25px;
 }
 #McTeach{
 
 }
+#links{
+    padding-left: 25px;
+}
 #findMe{
-    padding-top: 30px;
-    
+    padding-top: 70px;
+    padding-left: 25px;
 }
 #foot{
     text-align: center;
-    background-color: rgba(0, 174, 255, 0.849);;
+    background-color: #76beee;
+    height: 60px;
     color: whitesmoke;
+}
+#foot_Doc{
+    padding-top: 20px;
 }
