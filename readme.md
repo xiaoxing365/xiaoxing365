@@ -14,7 +14,7 @@ HTML/CSS/JS：
 
 找到我：
 
-1.	b站（bilibili）：mc小兴
+1.	b站（bilibili）：<a href="https://space.bilibili.com/2024358517">mc小兴</a>
 
 2.	邮箱：xiaoxing365@foxmail.com
 
