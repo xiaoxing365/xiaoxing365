@@ -173,7 +173,7 @@ under the License.
 		Spring-release,
 		Spring-plugins,
 		Jboss</mirrorOf>
-		<url>https://repo.huaweicloud.com/repository/maven/</url>
+		<url>https://mirrors.huaweicloud.com/repository/maven/</url>
 	</mirror>
 
   </mirrors>
