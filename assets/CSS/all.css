@@ -3,3 +3,6 @@
     border: 0 0;
     list-style: none;
 }
+body{cursor:url('../curs/Arrow.cur'),default;}
+a{cursor:url('../curs/Pin.cur'),pointer;}
+p{cursor:url('../curs/Pen.cur'),text;}
