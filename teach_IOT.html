@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body{
+    background-image: url("https://s2.loli.net/2025/05/25/bFMrN7EJRADkK5p.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+</style>
+</head>
+<body>
+  <!DOCTYPE html>
+  <html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>教程</title>
+    <link rel="stylesheet" href="./assets/CSS/lists.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>IOT教程</h1>
+
+      <!-- 搜索框 -->
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="搜索链接名称或网址..." />
+      </div>
+
+      <!-- 链接列表 -->
+      <div class="link-grid" id="linkGrid"></div>
+    </div>
+
+    <!-- 返回顶部按钮 -->
+    <button style="display: none;" class="back-to-top" id="backToTopBtn" title="回到顶部">↑</button>
+
+    <script>
+      // 链接数据
+      const links = [
+        { name: '小蜜蜂老师', url: 'https://www.cnblogs.com/ALittleBee/tag/CC2530/' },
+        { name: 'STM/CC2530', url: 'https://flowus.cn/share/73b45c12-c8ea-4759-bafd-014ea7c47b4e' },
+        { name: '无痕（windows维护）', url: 'https://www.cnblogs.com/wuhen520' },
+        { name: 'AlertDialog', url: 'https://space.bilibili.com/294140672' },
+      ];
+
+      const linkGrid = document.getElementById('linkGrid');
+      const searchInput = document.getElementById('searchInput');
+
+      function renderLinks(filteredLinks) {
+        linkGrid.innerHTML = '';
+        if (filteredLinks.length === 0) {
+          const noResult = document.createElement('p');
+          noResult.className = 'no-result';
+          noResult.textContent = '未找到匹配的链接。';
+          linkGrid.appendChild(noResult);
+          return;
+        }
+
+        filteredLinks.forEach(link => {
+          const card = document.createElement('div');
+          card.className = 'link-card';
+          card.innerHTML = `<a href="${link.url}" target="_blank">${link.name}</a>`;
+          linkGrid.appendChild(card);
+        });
+      }
+
+      // 初始渲染
+      renderLinks(links);
+
+      // 搜索功能
+      searchInput.addEventListener('input', () => {
+        const term = searchInput.value.toLowerCase();
+        const filtered = links.filter(link =>
+          link.name.toLowerCase().includes(term) ||
+          link.url.toLowerCase().includes(term)
+        );
+        renderLinks(filtered);
+      });
+
+      // 返回顶部按钮显示逻辑
+      const backToTopBtn = document.getElementById('backToTopBtn');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+          backToTopBtn.style.display = 'block';
+        } else {
+          backToTopBtn.style.display = 'none';
+        }
+      });
+
+      // 平滑回到顶部
+      backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    </script>
+  </body>
+  </html>
+  
+</body>
+</html>
+                  
