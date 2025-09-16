@@ -40,7 +40,7 @@ function getBingImages(imgUrls) {
 	else index++;
 	var imgUrl = imgUrls[index];
 	var url = "https://www.cn.bing.com" + imgUrl;
-	panel.style.background = "url('" + url + "') center center no-repeat #666";
+	panel.style.background = "url('https://bing.img.run/rand_uhd.php') center center no-repeat #666";
 	panel.style.backgroundSize = "cover";
 	sessionStorage.setItem(indexName, index);
 }
