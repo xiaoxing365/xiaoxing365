@@ -1,4 +1,4 @@
-![xiaoxing365's GitHub stats](https://github-readme-stats.vercel.app/api?username=xiaoxing365)
+![xiaoxing365's GitHub stats](https://github-readme-stats.vercel.app/api?username=xiaoxing365&show_icons=true&theme=radical)
 
 
 👋 我是xiaoxing365，一名高中生
