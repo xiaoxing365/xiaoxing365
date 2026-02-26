@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # IDE相关
 .vscode/
 .idea/
@@ -38,3 +39,6 @@ build/
 # 其他
 *.bak
 *.old
+=======
+.idea/
+>>>>>>> 3306221ff91678b8c4dc37050ccc3b97f6b8d6df

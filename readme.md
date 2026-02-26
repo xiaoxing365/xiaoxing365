@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 小兴365的个人网站
 
 ## 网站介绍
@@ -45,3 +46,28 @@
 ## 部署方式
 
 网站通过 GitHub Pages 部署，将代码推送到 `main` 分支后，GitHub 会自动部署网站。
+=======
+![xiaoxing365's GitHub stats](https://github-readme-stats.vercel.app/api?username=xiaoxing365&show_icons=true&theme=radical)
+
+
+👋 我是xiaoxing365，一名高中生
+java语言，MC爱好者
+在假期自学编程语言
+目前在学的语言：
+
+Java：
+- 主要学习的语言，有时写MC服务器插件
+
+C/C++：
+- 学习量较少
+
+HTML/CSS/JS：
+- 前端网络三件套
+
+找到我：
+
+1.	bilibili：<a href="https://space.bilibili.com/2024358517">mc小兴</a>
+
+2.	邮箱：mcxiaoxing365@163.com
+
+>>>>>>> 3306221ff91678b8c4dc37050ccc3b97f6b8d6df
