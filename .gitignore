@@ -1,0 +1,40 @@
+# IDE相关
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 操作系统相关
+.DS_Store
+Thumbs.db
+
+# 日志文件
+*.log
+
+# 临时文件
+*.tmp
+*.temp
+
+# 编译生成文件
+*.css.map
+*.js.map
+
+# 本地开发文件
+local.config.js
+.env
+
+# 依赖目录
+node_modules/
+
+# 测试报告
+coverage/
+*.lcov
+
+# 构建输出
+dist/
+build/
+
+# 其他
+*.bak
+*.old

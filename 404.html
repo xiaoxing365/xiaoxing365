@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 页面未找到</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(135deg, #1a2a6c, #b21f1f, #1a2a6c);
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+
+      .container {
+        text-align: center;
+        position: relative;
+        z-index: 10;
+      }
+
+      .error-code {
+        font-size: 12rem;
+        font-weight: bold;
+        line-height: 1;
+        margin-bottom: 2rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      .digit {
+        color: rgba(255, 255, 255, 0.1);
+        position: relative;
+      }
+
+      .gear-container {
+        position: relative;
+        width: 220px;
+        height: 220px;
+        display: inline-block;
+      }
+
+      .gear {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        animation: rotate 8s linear infinite;
+      }
+
+      .gear-inner {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        width: 60%;
+        height: 60%;
+        border-radius: 50%;
+        background: #4facfe;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 5rem;
+        font-weight: bold;
+        animation: pulse 2s ease-in-out infinite alternate;
+      }
+
+      .gear-tooth {
+        position: absolute;
+        background: #00f2fe;
+        border-radius: 5px;
+      }
+
+      /* 创建齿轮齿 */
+      .tooth-1 {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 15px;
+        height: 30px;
+      }
+      .tooth-2 {
+        top: 15%;
+        right: 0;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 15px;
+      }
+      .tooth-3 {
+        bottom: 15%;
+        right: 0;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 15px;
+      }
+      .tooth-4 {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 15px;
+        height: 30px;
+      }
+      .tooth-5 {
+        top: 7.5%;
+        right: 9%;
+        transform: rotate(45deg);
+        width: 15px;
+        height: 30px;
+      }
+      .tooth-6 {
+        top: 7.5%;
+        left: 9%;
+        transform: rotate(-45deg);
+        width: 15px;
+        height: 30px;
+      }
+      .tooth-7 {
+        bottom: 7.5%;
+        right: 9%;
+        transform: rotate(-45deg);
+        width: 15px;
+        height: 30px;
+      }
+      .tooth-8 {
+        bottom: 7.5%;
+        left: 9%;
+        transform: rotate(45deg);
+        width: 15px;
+        height: 30px;
+      }
+
+      .kite {
+        position: absolute;
+        top: 20%;
+        right: 15%;
+        width: 120px;
+        height: 120px;
+        animation: fly 10s ease-in-out infinite;
+        z-index: 5;
+      }
+
+      .kite-body {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform: rotate(45deg);
+      }
+
+      .kite-shape {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 4px solid #ff7e5f;
+        border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+        background: linear-gradient(45deg, #ff7e5f, #feb47b);
+        opacity: 0.9;
+      }
+
+      .kite-string {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 200px;
+        background: rgba(255, 255, 255, 0.5);
+      }
+
+      .message {
+        font-size: 2rem;
+        margin-top: 3rem;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        animation: fadeInOut 3s ease-in-out infinite;
+      }
+
+      .home-link {
+        display: inline-block;
+        margin-top: 2rem;
+        padding: 12px 30px;
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        text-decoration: none;
+        border-radius: 30px;
+        font-size: 1.2rem;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+
+      .home-link:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: scale(1.05);
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+          box-shadow: 0 0 10px #4facfe;
+        }
+        100% {
+          transform: scale(1.05);
+          box-shadow: 0 0 20px #00f2fe;
+        }
+      }
+
+      @keyframes fly {
+        0%,
+        100% {
+          transform: translateY(0) rotate(-5deg);
+        }
+        25% {
+          transform: translateY(-20px) rotate(5deg);
+        }
+        50% {
+          transform: translateY(0) rotate(-3deg);
+        }
+        75% {
+          transform: translateY(-15px) rotate(3deg);
+        }
+      }
+
+      @keyframes fadeInOut {
+        0%,
+        100% {
+          opacity: 0.7;
+        }
+        50% {
+          opacity: 1;
+        }
+      }
+
+      .cloud {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        z-index: 1;
+      }
+
+      .cloud:nth-child(1) {
+        top: 10%;
+        left: 5%;
+        width: 100px;
+        height: 40px;
+        animation: float 15s linear infinite;
+      }
+
+      .cloud:nth-child(2) {
+        top: 30%;
+        right: 10%;
+        width: 150px;
+        height: 50px;
+        animation: float 20s linear infinite reverse;
+      }
+
+      .cloud:nth-child(3) {
+        bottom: 20%;
+        left: 20%;
+        width: 80px;
+        height: 30px;
+        animation: float 25s linear infinite;
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateX(-100vw);
+        }
+        100% {
+          transform: translateX(100vw);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .error-code {
+          font-size: 8rem;
+          gap: 1rem;
+        }
+
+        .gear-container {
+          width: 150px;
+          height: 150px;
+        }
+
+        .kite {
+          display: none;
+        }
+
+        .message {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 飘动的云朵 -->
+    <div class="cloud"></div>
+    <div class="cloud"></div>
+    <div class="cloud"></div>
+
+    <div class="container">
+      <div class="error-code">
+        <div class="digit">4</div>
+        <div class="gear-container">
+          <div class="gear">
+            <div class="gear-shape"></div>
+            <div class="gear-tooth tooth-1"></div>
+            <div class="gear-tooth tooth-2"></div>
+            <div class="gear-tooth tooth-3"></div>
+            <div class="gear-tooth tooth-4"></div>
+            <div class="gear-tooth tooth-5"></div>
+            <div class="gear-tooth tooth-6"></div>
+            <div class="gear-tooth tooth-7"></div>
+            <div class="gear-tooth tooth-8"></div>
+            <div class="gear-inner">0</div>
+          </div>
+        </div>
+        <div class="digit">4</div>
+      </div>
+
+      <div class="message">页面飞走了，像风筝一样...</div>
+
+      <a href="./index.html" class="home-link">返回首页</a>
+    </div>
+
+    <!-- 飞翔的风筝 -->
+    <div class="kite">
+      <div class="kite-body">
+        <div class="kite-shape"></div>
+      </div>
+      <div class="kite-string"></div>
+    </div>
+
+    <script>
+      // 动态创建更多齿轮齿
+      document.addEventListener('DOMContentLoaded', function () {
+        const gear = document.querySelector('.gear');
+        for (let i = 9; i <= 24; i++) {
+          const tooth = document.createElement('div');
+          tooth.className = `gear-tooth tooth-${i}`;
+          // 计算围绕中心点的位置
+          const angle = (i - 9) * 15; // 每个新齿增加15度
+          const radius = 90; // 半径
+          const centerX = 50;
+          const centerY = 50;
+
+          tooth.style.position = 'absolute';
+          tooth.style.width = '12px';
+          tooth.style.height = '20px';
+          tooth.style.left = `${centerX + radius * Math.cos((angle * Math.PI) / 180)}%`;
+          tooth.style.top = `${centerY + radius * Math.sin((angle * Math.PI) / 180)}%`;
+          tooth.style.transform = `translate(-50%, -50%) rotate(${angle}deg)`;
+          tooth.style.background = '#00d2ff';
+
+          gear.appendChild(tooth);
+        }
+      });
+    </script>
+  </body>
+</html>
