@@ -1,9 +1,5 @@
 <h1 align="center">👋 欢迎来到 xiaoxing365 的 GitHub</h1>
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=2E9F6F&center=true&vCenter=true&width=600&lines=Java+%7C+Minecraft+%7C+C%2F%2B%2B;从红石电路到Spring+Cloud;技术布道+分享快乐" alt="Typing SVG" />
-</p>
-
 ---
 
 ### 🧑‍💻 关于我
