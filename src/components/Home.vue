@@ -1,7 +1,4 @@
 <template>
-  <div>
-    <img class="top-img" src="@/assets/imgs/topimg.jpg" alt="top_img">
-  </div>
   <main>
     <h1>小兴365的个人网站</h1>
     
@@ -22,18 +19,7 @@ export default defineComponent({
     border: 0;
     padding: 0;
 }
-template {
-    width: 100%;
-    height: auto;
-    position: relative;
-    overflow: hidden;
-}
-.top-img{
-    height: 100vh;
-    border-radius: 30px;
-    object-fit: cover;
-    display: block;
-}
+
 main{
     display: flex;
     flex-direction: column;

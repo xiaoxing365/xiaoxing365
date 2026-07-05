@@ -10,6 +10,9 @@
         </li>
       </ul>
     </header>
+  <div>
+    <img class="top-img" src="@/assets/imgs/topimg.jpg" alt="top_img">
+  </div>
 </template>
 
 <script lang="ts">
@@ -41,13 +44,18 @@ header{
 }
 header ul{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 100%;
-
+  gap: 60px;
 }
 header li{
-  flex: 1;
   text-align: center;
+}
+
+.top-img{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
 }
 </style>
