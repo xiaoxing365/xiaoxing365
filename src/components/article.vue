@@ -6,6 +6,7 @@
                 <a :href="article.url" target="_blank" style="text-decoration: none;color: gray;">
                     <h3>{{article.name}}</h3>
                     <p>{{article.description}}</p>
+                    <p style="text-align: right;">查看更多>></p>
                 </a>
             </div>
         </div>
