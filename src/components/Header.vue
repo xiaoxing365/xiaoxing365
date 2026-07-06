@@ -28,9 +28,6 @@ export default defineComponent({
     border: 0;
     padding: 0;
 }
-a{
-  color: white;
-}
 header{
   position: fixed;
   top: 0;
