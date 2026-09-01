@@ -67,4 +67,4 @@ Disallow: /
 User-agent: meta-externalagent
 Disallow: /
 
-Sitemap: https://blog.xiaoxing365.top/sitemap.xml
+Sitemap: https://xiaoxing365.top/sitemap.xml
