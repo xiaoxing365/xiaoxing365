@@ -31,14 +31,20 @@ Disallow: /js/
 Disallow: /images/
 Disallow: /font/
 Disallow: /assets/
+Disallow: /archives/
+Disallow: /tags/
+Disallow: /categories/
 
 User-agent: Googlebot
 Allow: /
 Disallow: /css/
 Disallow: /js/
 Disallow: /images/
-Disallow: /fonts/
+Disallow: /font/
 Disallow: /assets/
+Disallow: /archives/
+Disallow: /tags/
+Disallow: /categories/
 
 User-agent: Amazonbot
 Disallow: /
